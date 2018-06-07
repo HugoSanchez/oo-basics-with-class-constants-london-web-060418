@@ -6,7 +6,9 @@ class Shoe
  
   def initialize(brand)
     @brand = brand
+    if !BRANDS[brand]
     BRANDS << brand
+    end
   end
 
   def cobble
